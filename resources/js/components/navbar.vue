@@ -30,6 +30,9 @@
                         
                             <li class="nav-item">
                                 <router-link class="nav-link" to="/Register">Register</router-link>
+                            </li>  
+                            <li class="nav-item">
+                                <router-link class="nav-link" to="/account"> Account</router-link>
                             </li>    
 
                             <li class="nav-item dropdown">

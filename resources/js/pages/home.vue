@@ -9,7 +9,7 @@ import navbar from '../components/navbar'
 import login from '../pages/login'
 import VueRouter from 'vue-router'
 import register from '../pages/register'
-
+import account from '../pages/account'
 Vue.use(VueRouter)
 
 
@@ -20,7 +20,8 @@ const routes = [
     { path: '/login', component:login},
     { path: '/register',component:register},
     { path: '/foo', component: Foo },
-    { path: '/bar', component: Bar }
+    { path: '/bar', component: Bar },
+    { path: '/account', component: account }
 ]
 
 
