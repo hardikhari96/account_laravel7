@@ -14,8 +14,7 @@ class DACACCOUNTTYPES extends Migration
     public function up()
     {
         Schema::create('DAC_ACCOUNT_TYPES', function (Blueprint $table) {
-            $table->id();
-            $table->integer('AC_TYPE_ID',true);
+            $table->id('AC_TYPE_ID');
             $table->string('AC_TYPE_NAME')->unique();
             $table->string('PARENT_TYPE')->nullable();
             $table->string('DR_CR')->nullable();;

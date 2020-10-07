@@ -15,21 +15,21 @@ class DACRECPAYS extends Migration
     {
         Schema::create('DAC_REC_PAYS', function (Blueprint $table) {
             $table->id('YEAR_ID');
-            $table->string('TRANS_NO');
-            $table->string('VOUCHER_TYPE');
-            $table->string('VOUCHER_DATE');
-            $table->string('CASH_AC_CODE');
-            $table->string('CHEQUE_DD_NO');
-            $table->string('PARAM_AC_CODE');
-            $table->string('FATHER_NAME');
-            $table->string('PARTY_NAME');
-            $table->string('PARTY_ADD');
-            $table->string('REMARK');
-            $table->string('AMOUNT');
+            $table->integer('TRANS_NO');
+            $table->integer('VOUCHER_TYPE');
+            $table->date('VOUCHER_DATE');
+            $table->smallInteger('CASH_AC_CODE');
+            $table->string('CHEQUE_DD_NO',50);
+            $table->smallInteger('PARAM_AC_CODE');
+            $table->string('FATHER_NAME',150);
+            $table->string('PARTY_NAME',150);
+            $table->string('PARTY_ADD',255);
+            $table->string('REMARK',255);
+            $table->integer('AMOUNT');
             $table->string('CASE_NO');
-            $table->string('IS_DONATIION');
-            $table->string('IS_DEPOSITE');
-            $table->string('DONATION_CODE');
+            $table->boolean('IS_DONATIION');
+            $table->boolean('IS_DEPOSITE');
+            $table->integer('DONATION_CODE');
             $table->string('FUNCTION_DT');
             $table->string('photo');
             $table->string('sign');

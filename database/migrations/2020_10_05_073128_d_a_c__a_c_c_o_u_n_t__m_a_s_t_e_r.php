@@ -16,8 +16,9 @@ class DACACCOUNTMASTER extends Migration
         Schema::create('DAC_ACCOUNT_MASTERS', function (Blueprint $table) {
             $table->id();
             $table->smallInteger('AC_CODE');
-            $table->smallInteger('AC_PARENT');
+            $table->smallInteger('AC_PARENT')->default(0);
             $table->integer('AC_TYPE');
+            $table->foreign('AC_TYPE')->references('DAC_ACCOUNT_TYPES')->on('AC_TYPE');
             $table->smallInteger('G_A');
             $table->string('AC_NAME');
             $table->string('NATURE');
