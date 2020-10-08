@@ -14,15 +14,9 @@ import journal from '../pages/journal'
 
 Vue.use(VueRouter)
 
-
-const Foo = { template: '<div>foo</div>' }
-const Bar = { template: '<div>bar</div>' }
-
 const routes = [
     { path: '/login', component:login},
     { path: '/register',component:register},
-    { path: '/foo', component: Foo },
-    { path: '/bar', component: Bar },
     { path: '/journal', component: journal },
     { path: '/account', component: account }
 ]

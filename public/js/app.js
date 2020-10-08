@@ -1977,24 +1977,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]);
-var Foo = {
-  template: '<div>foo</div>'
-};
-var Bar = {
-  template: '<div>bar</div>'
-};
 var routes = [{
   path: '/login',
   component: _pages_login__WEBPACK_IMPORTED_MODULE_1__["default"]
 }, {
   path: '/register',
   component: _pages_register__WEBPACK_IMPORTED_MODULE_3__["default"]
-}, {
-  path: '/foo',
-  component: Foo
-}, {
-  path: '/bar',
-  component: Bar
 }, {
   path: '/journal',
   component: _pages_journal__WEBPACK_IMPORTED_MODULE_5__["default"]
@@ -38964,33 +38952,7 @@ var render = function() {
               attrs: { id: "navbarSupportedContent" }
             },
             [
-              _c("ul", { staticClass: "navbar-nav mr-auto" }, [
-                _c(
-                  "li",
-                  { staticClass: "nav-item" },
-                  [
-                    _c(
-                      "router-link",
-                      { staticClass: "nav-link", attrs: { to: "/foo" } },
-                      [_vm._v("Go to Foo")]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "li",
-                  { staticClass: "nav-item" },
-                  [
-                    _c(
-                      "router-link",
-                      { staticClass: "nav-link", attrs: { to: "/bar" } },
-                      [_vm._v("Go to bar")]
-                    )
-                  ],
-                  1
-                )
-              ]),
+              _c("ul", { staticClass: "navbar-nav mr-auto" }),
               _vm._v(" "),
               _c("ul", { staticClass: "navbar-nav ml-auto" }, [
                 _c(
